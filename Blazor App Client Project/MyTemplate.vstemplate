@@ -19,7 +19,7 @@
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
       </Folder>
-      <Folder Name="wwwroot" TargetFolderName="wwwroot">
+      <Folder Name="wwwroot" TargetFolderName="wwwroot">	  
         <Folder Name="css" TargetFolderName="css">
           <Folder Name="bootstrap" TargetFolderName="bootstrap">
             <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.css">bootstrap.min.css</ProjectItem>
@@ -44,6 +44,9 @@
           </Folder>
           <ProjectItem ReplaceParameters="true" TargetFileName="site.css">site.css</ProjectItem>
         </Folder>
+		<Folder Name="sample-data" TargetFolderName="sample-data">
+			<ProjectItem ReplaceParameters="false" TargetFileName="weather.json">weather.json</ProjectItem>
+		</Folder>		
         <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
       </Folder>
       <Folder Name="Pages" TargetFolderName="Pages">
