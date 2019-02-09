@@ -44,6 +44,9 @@
           </Folder>
           <ProjectItem ReplaceParameters="true" TargetFileName="site.css">site.css</ProjectItem>
         </Folder>
+		<Folder Name="sample-data" TargetFolderName="sample-data">
+			<ProjectItem ReplaceParameters="false" TargetFileName="weather.json">weather.json</ProjectItem>
+		</Folder>	
         <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
       </Folder>
       <Folder Name="Pages" TargetFolderName="Pages">

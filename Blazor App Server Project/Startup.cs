@@ -10,14 +10,14 @@ using System.Net.Mime;
 
 namespace $safeprojectname$
 {
-    public class Startup
+	public class Startup
     {
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-                       
+
             services.AddRazorComponents<Client.Startup>();
 
             services.AddSingleton<HttpClient>();
@@ -35,7 +35,7 @@ namespace $safeprojectname$
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseResponseCompression();            
+            app.UseResponseCompression();
 
             if (env.IsDevelopment())
             {
@@ -44,18 +44,9 @@ namespace $safeprojectname$
 
             app.UseStaticFiles();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(name: "default", template: "{controller}/{action}/{id?}");
-            });
-
-
-            // app.UseBlazor<Client.Startup>();
-
-            // app.UseBlazorDebugging();
+            app.UseBlazorDebugging();
 
             app.UseRazorComponents<Client.Startup>();
-            
 
         }
     }

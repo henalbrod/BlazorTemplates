@@ -1,6 +1,9 @@
-﻿@using Blazor080ServerSideTest.Shared
+﻿@using $ext_safeprojectname$.Shared
 @page "/fetchdata"
 @inject HttpClient Http
+
+// server-side
+@inject Microsoft.AspNetCore.Components.Services.IUriHelper UriHelper
 
 <h1>Weather forecast</h1>
 
@@ -36,10 +39,16 @@ else
 }
 
 @functions {
+
     WeatherForecast[] forecasts;
 
     protected override async Task OnInitAsync()
     {
-        forecasts = await Http.GetJsonAsync<WeatherForecast[]>("/api/SampleData/WeatherForecasts");
+        // server-side
+        forecasts = await Http.GetJsonAsync<WeatherForecast[]>(UriHelper.GetBaseUri().ToString() + "sample-data/weather.json");
+
+        // client-side
+        //forecasts = await Http.GetJsonAsync<WeatherForecast[]>("sample-data/weather.json");
     }
+
 }

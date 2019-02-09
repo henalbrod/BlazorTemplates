@@ -7,13 +7,13 @@
     </TemplateData>
     <TemplateContent>
         <ProjectCollection>
-            <ProjectTemplateLink ProjectName="$safeprojectname$.Client" ReplaceParameters="true">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Client" CopyParameters="true">
                 Client\MyTemplate.vstemplate
             </ProjectTemplateLink>
-            <ProjectTemplateLink ProjectName="$safeprojectname$.Server" ReplaceParameters="true">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Server" CopyParameters="true">
                 Server\MyTemplate.vstemplate
             </ProjectTemplateLink>
-            <ProjectTemplateLink ProjectName="$safeprojectname$.Shared" ReplaceParameters="true">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Shared" CopyParameters="true">
                 Shared\MyTemplate.vstemplate
             </ProjectTemplateLink>			
         </ProjectCollection>
