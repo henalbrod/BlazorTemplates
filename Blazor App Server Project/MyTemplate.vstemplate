@@ -46,9 +46,6 @@
         </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
       </Folder>
-      <Folder Name="Controllers" TargetFolderName="Controllers">
-        <ProjectItem ReplaceParameters="true" TargetFileName="SampleDataController.cs">SampleDataController.cs</ProjectItem>
-      </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
     </Project>
