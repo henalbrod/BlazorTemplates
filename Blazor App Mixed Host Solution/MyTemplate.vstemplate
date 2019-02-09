@@ -1,0 +1,21 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Blazor App Mixed Host Solution</Name>
+        <Description>A blazor solution that can be hosted either client or server side</Description>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Client" ReplaceParameters="true">
+                Client\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Server" ReplaceParameters="true">
+                Server\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Shared" ReplaceParameters="true">
+                Shared\MyTemplate.vstemplate
+            </ProjectTemplateLink>			
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
