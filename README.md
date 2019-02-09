@@ -21,3 +21,8 @@ This template implements the client-side hosting model
 ### Blazor App Server Project [Download](https://github.com/Pegazux/Blazor-App-Mixed-Host-Solution/blob/master/Blazor%20App%20Server%20Project/Blazor%20App%20Server%20Project.zip?raw=true)
 
 This template implements the server-side hosting model using using the classic blazor ASP.Net Core Hosted model
+
+
+### How to use them?
+
+Clone the repository or directly download only the template(s) you desire and follow [this instructions](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates?view=vs-2019#user-templates)
