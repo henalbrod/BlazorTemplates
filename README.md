@@ -1,5 +1,5 @@
 # Blazor App Mixed Host Solution
-This is a Visual Studio 2019 project template for creating [blazor](http://blazor.net) v0.8.0 solutions that can be hosted either client or server side
+This is a Visual Studio 2019 project template for creating [Blazor](http://blazor.net) v0.8.0 solutions that can be hosted either client or server side
 
 
 ### Blazor App Mixed Host Solution [Download](https://github.com/Pegazux/Blazor-App-Mixed-Host-Solution/blob/master/Blazor%20App%20Mixed%20Host%20Solution/Blazor%20App%20Mixed%20Host%20Solution.zip?raw=true)
