@@ -1,8 +1,8 @@
-# Blazor App Templates
+# Blazor Project Templates
 These are Visual Studio 2019 project templates for creating [Blazor](http://blazor.net) v0.8.0 solutions that can be hosted either client or server side
 
 
-### Mixed Host Solution Template [Download](https://github.com/Pegazux/Blazor-App-Mixed-Host-Solution/blob/master/Blazor%20App%20Mixed%20Host%20Solution/Blazor%20App%20Mixed%20Host%20Solution.zip?raw=true)
+### Mixed-Host Project Template [Download](https://github.com/Pegazux/Blazor-App-Mixed-Host-Solution/blob/master/Blazor%20App%20Mixed%20Host%20Solution/Blazor%20App%20Mixed%20Host%20Solution.zip?raw=true)
 
 This template implements both the client-side and server-side hoting models using the classic blazor ASP.Net Core Hosted Solution Structure:
 
