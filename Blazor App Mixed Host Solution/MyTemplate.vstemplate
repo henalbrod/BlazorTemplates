@@ -4,6 +4,7 @@
         <Name>Blazor App Mixed Host Solution</Name>
         <Description>A blazor solution that can be hosted either client or server side</Description>
         <ProjectType>CSharp</ProjectType>
+		<Icon>__TemplateIcon.ico</Icon>
     </TemplateData>
     <TemplateContent>
         <ProjectCollection>

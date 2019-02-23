@@ -11,12 +11,24 @@
 <body>
 
     <app>Loading...</app>
+	
+	<script>
+		// You can leave this ugly JS code and interpolate between hosting models automatically
+        // You can run, but you can't hide
+        // ATT: Javascript
+        var interopScript = document.createElement("script");
+        interopScript.setAttribute("src", `_framework/components.${location.host == "localhost:54964" ? "server": "webassembly"}.js`);
+        document.head.appendChild(interopScript);
+    </script>
+	
+	
+	<!-- Or you can allways do it by hand (proud before practicality) -->
 
-    <!-- Uncomment for client Side-->
-    <!--<script src="_framework/components.webassembly.js"></script>-->
-
-    <!--Uncomment for server Side-->
-    <script src="_framework/components.server.js"></script>
+    <!--Server Side-->
+    <!--<script src="_framework/components.server.js"></script>-->
+	
+    <!--Client Side-->
+    <!--<script src="_framework/components.webassembly.js"></script>-->	
 	
 </body>
 </html>

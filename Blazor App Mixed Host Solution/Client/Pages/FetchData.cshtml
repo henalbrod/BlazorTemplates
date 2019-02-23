@@ -2,7 +2,7 @@
 @page "/fetchdata"
 @inject HttpClient Http
 
-// server-side
+@*server-side*@
 @inject Microsoft.AspNetCore.Components.Services.IUriHelper UriHelper
 
 <h1>Weather forecast</h1>
@@ -44,11 +44,18 @@ else
 
     protected override async Task OnInitAsync()
     {
-        // server-side
-        forecasts = await Http.GetJsonAsync<WeatherForecast[]>(UriHelper.GetBaseUri().ToString() + "sample-data/weather.json");
 
-        // client-side
-        //forecasts = await Http.GetJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+        Uri location = new Uri(UriHelper.GetBaseUri());
+
+        if (location.Host == "localhost" && location.Port == 54964)
+        {
+            // server-side
+            forecasts = await Http.GetJsonAsync<WeatherForecast[]>("http://localhost:54964/api/sample-data/WeatherForecasts");
+        }
+        else {
+            // client-side
+            forecasts = await Http.GetJsonAsync<WeatherForecast[]>(UriHelper.GetBaseUri().ToString() + "sample-data/weather.json");            
+        }
+
     }
-
 }

@@ -47,7 +47,8 @@
 		<Folder Name="sample-data" TargetFolderName="sample-data">
 			<ProjectItem ReplaceParameters="false" TargetFileName="weather.json">weather.json</ProjectItem>
 		</Folder>	
-        <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+		<ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
       </Folder>
       <Folder Name="Pages" TargetFolderName="Pages">
         <ProjectItem ReplaceParameters="true" TargetFileName="_ViewImports.cshtml">_ViewImports.cshtml</ProjectItem>
@@ -62,7 +63,6 @@
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="_ViewImports.cshtml">_ViewImports.cshtml</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="App.cshtml">App.cshtml</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="linker.xml">linker.xml</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
     </Project>

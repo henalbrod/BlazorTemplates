@@ -18,34 +18,10 @@
     <Project TargetFileName="$safeprojectname$.Server.csproj" File="BlazorApp.Server.csproj" ReplaceParameters="true">
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
-      </Folder>
-      <Folder Name="wwwroot" TargetFolderName="wwwroot">
-        <Folder Name="css" TargetFolderName="css">
-          <Folder Name="bootstrap" TargetFolderName="bootstrap">
-            <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.css">bootstrap.min.css</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.css.map">bootstrap.min.css.map</ProjectItem>
-          </Folder>
-          <Folder Name="open-iconic" TargetFolderName="open-iconic">
-            <Folder Name="font" TargetFolderName="font">
-              <Folder Name="css" TargetFolderName="css">
-                <ProjectItem ReplaceParameters="true" TargetFileName="open-iconic-bootstrap.min.css">open-iconic-bootstrap.min.css</ProjectItem>
-              </Folder>
-              <Folder Name="fonts" TargetFolderName="fonts">
-                <ProjectItem ReplaceParameters="false" TargetFileName="open-iconic.eot">open-iconic.eot</ProjectItem>
-                <ProjectItem ReplaceParameters="false" TargetFileName="open-iconic.otf">open-iconic.otf</ProjectItem>
-                <ProjectItem ReplaceParameters="false" TargetFileName="open-iconic.svg">open-iconic.svg</ProjectItem>
-                <ProjectItem ReplaceParameters="false" TargetFileName="open-iconic.ttf">open-iconic.ttf</ProjectItem>
-                <ProjectItem ReplaceParameters="false" TargetFileName="open-iconic.woff">open-iconic.woff</ProjectItem>
-              </Folder>
-            </Folder>
-            <ProjectItem ReplaceParameters="false" TargetFileName="FONT-LICENSE">FONT-LICENSE</ProjectItem>
-            <ProjectItem ReplaceParameters="false" TargetFileName="ICON-LICENSE">ICON-LICENSE</ProjectItem>
-            <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
-          </Folder>
-          <ProjectItem ReplaceParameters="true" TargetFileName="site.css">site.css</ProjectItem>
-        </Folder>
-        <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
-      </Folder>
+      </Folder>	  
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="SampleDataController.cs">SampleDataController.cs</ProjectItem>
+      </Folder>	  	  
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
     </Project>
