@@ -1,0 +1,34 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Blazor Component</Name>
+    <Description>Project template for creating a new Blazor Component</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Blazor Component</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="MafilCloud.Shared.ClientComponents.csproj" File="MafilCloud.Shared.ClientComponents.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name="content" TargetFolderName="content">
+        <ProjectItem ReplaceParameters="false" TargetFileName="background.png">background.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="background.png">vstg0001.png</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="exampleJsInterop.js">exampleJsInterop.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="exampleJsInterop.js">vstg0002.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="styles.css">styles.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="styles.css">vstg0003.css</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Component1.cshtml">Component1.cshtml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ExampleJsInterop.cs">ExampleJsInterop.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
