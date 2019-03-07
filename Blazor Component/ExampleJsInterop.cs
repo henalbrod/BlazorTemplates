@@ -5,10 +5,17 @@ namespace $safeprojectname$
 {
     public class ExampleJsInterop
     {
-        public static Task<string> Prompt(string message)
+
+        IJSRuntime _jSRuntime;
+
+        public ExampleJsInterop(IJSRuntime jSRuntime) {
+            _jSRuntime = jSRuntime;
+        }
+
+        public async Task<string> Prompt(string message)
         {
             // Implemented in exampleJsInterop.js
-            return JSRuntime.Current.InvokeAsync<string>(
+            return await _jSRuntime.InvokeAsync<string>(
                 "exampleJsFunctions.showPrompt",
                 message);
         }

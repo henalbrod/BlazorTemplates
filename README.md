@@ -13,8 +13,7 @@ This template implements both the client-side and server-side hoting models usin
 
 Select the [solution_name].Server project or set it as the default project doing so the application will run under server-side (ASP.NET Core Razor Components with SignalR) host model. 
 
-- Under this mode you can debug the Client C# code, controllers routes also work under "api/{controller}/{action}" routes
-- Please note that in this template the Server project utilizes the same wwwroot folder located inside the Client project, so there's no need to move it inside the Server project.
+- Under this mode you can debug the Client C# code
 - Server project points to Client's wwwroot folder, so no need of move it into Server project.
 
 ### Runnning in client-side mode
@@ -31,4 +30,4 @@ Clone the repository or directly [Download](https://github.com/Pegazux/Blazor-Ap
 
 ### Known issues
 
-- Pressing F5 throws an exception while running in server-side mode (except root path)
+- No WEB API Support in server project
